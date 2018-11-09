@@ -177,7 +177,7 @@ Turnover=[StaffbyYear[i]/StaffbyYear[i-1] if StaffbyYear[i]< StaffbyYear[i-1] fo
 
 np.median(Turnover)
 
-What percentage of the expenditures of the top 20 spenders in 2016 come from members of the Democratic Party? Representatives are identified by their 'BIOGUIDE_ID', which can be used to look up representatives with ProPublica's Congress API(https://projects.propublica.org/api-docs/congress-api/members/#get-a-specic- member) to find their party affiliation. Consider an expenditure as being in 2016 if its 'START DATE' is in 2016.
+#What percentage of the expenditures of the top 20 spenders in 2016 come from members of the Democratic Party? Representatives are identified by their 'BIOGUIDE_ID', which can be used to look up representatives with ProPublica's Congress API(https://projects.propublica.org/api-docs/congress-api/members/#get-a-specic- member) to find their party affiliation. Consider an expenditure as being in 2016 if its 'START DATE' is in 2016.
 
 
 ["Even" if i%2==0 else "Odd" for i in range(10)]
@@ -199,42 +199,3 @@ for i in Staffbyyear:
     turnover=Staffbyyear[i+1]-Staffbyyear[i]
 
 
-#Seventh question: Party Affiliation. Find dems, find 2016, find top 20, find expenditures, find
-
-
-
-Top20=[Data["YEAR"]=>["2016"]].nlargest(20, Data["AMOUNT"])
-
-PercentageDems=len([[Top20["PartyID"]==["Dem"]]])/20
-
-
-#Done
-
-Sorted_value = sorted(list(df['Installs'].unique()))
-print(Sorted_value)
-df['Installs'].replace(Sorted_value,range(0,len(Sorted_value),1), inplace = True )
-
-
-
-
-In [2]: sort1 = df.ix[grp[['B']].transform(sum).sort('B').index]
-
-
-plt.hist(df["Last Updated"], bins=20)
-plt.boxplot(df["Last Updated"])
-
-#Unused code
- 879
-dfAll
-3
-
-
-=[]kjklj
-for i in Detaillist:
-    dfAll.append(pd.read_csv(i))
-
-df = pd.concat(dflist)
-j ikl
-df1= pd.read_csv("/Users/ashikshafi/Desktop/testing/file1.csv")
-
-/Users/ashikshafi/Desktop/testing
